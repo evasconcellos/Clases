@@ -25,17 +25,16 @@ if (nombre !== "") {
         break;
 
       default:
-        alert("Error!");
+        alert("Elegiste un número mayor a 5, pero sigamos...");
     }
 
-    if (elegirNumer <= 5) {
-      let sumaNumer = prompt("Al número elegido, sumale otro");
-      alert("Tu resultado es " + (parseInt(elegirNumer) + parseInt(sumaNumer)));
-    } else {
-      alert(
-        "El número ingresado no corresponde a lo pedido, vuelve a intentarlo."
-      );
+    for (i = 0; i < 1; i++) {
+      var sumaNumer = prompt("Sumale un número");
+      alert("El resultado es " + (parseInt(elegirNumer) + parseInt(sumaNumer)));
+      var sumaNumer2 = prompt("Por último, uno más")
+      alert("El resultado final es " + (parseInt(elegirNumer) + parseInt(sumaNumer) + parseInt(sumaNumer2)));
     }
+
   } else {
     alert("Solo puedes continuar si eres mayor de 18 años");
   }
