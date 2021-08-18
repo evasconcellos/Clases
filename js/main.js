@@ -7,34 +7,41 @@ if (nombre !== "") {
     alert("Tenés " + edad + ", excelente.");
     let elegirNumer = parseInt(prompt("Ahora elige un número del 1 al 5"));
 
-    switch (elegirNumer) {
-      case 1:
-        alert("Elegiste el 1");
-        break;
-      case 2:
-        alert("Elegiste el 2");
-        break;
-      case 3:
-        alert("Elegiste el 3");
-        break;
-      case 4:
-        alert("Elegiste el 4");
-        break;
-      case 5:
-        alert("Elegiste el 5");
-        break;
+    while (elegirNumer >= 5) {
+      switch (elegirNumer) {
+        case 1:
+          alert("Elegiste el 1");
+          break;
+        case 2:
+          alert("Elegiste el 2");
+          break;
+        case 3:
+          alert("Elegiste el 3");
+          break;
+        case 4:
+          alert("Elegiste el 4");
+          break;
+        case 5:
+          alert("Elegiste el 5");
+          break;
 
-      default:
-        alert("Elegiste un número mayor a 5, pero sigamos...");
+        default:
+          alert(
+            "Elegiste un número mayor a 5, no saldrás del bucle si no haces caso :)"
+          );
+      }
+      elegirNumer = prompt("Elige un número del 1 al 5 :)");
     }
 
     for (i = 0; i < 1; i++) {
       var sumaNumer = prompt("Sumale un número");
       alert("El resultado es " + (parseInt(elegirNumer) + parseInt(sumaNumer)));
-      var sumaNumer2 = prompt("Por último, uno más")
-      alert("El resultado final es " + (parseInt(elegirNumer) + parseInt(sumaNumer) + parseInt(sumaNumer2)));
+      var sumaNumer2 = prompt("Por último, sumale uno más");
+      alert(
+        "El resultado final es " +
+          (parseInt(elegirNumer) + parseInt(sumaNumer) + parseInt(sumaNumer2))
+      );
     }
-
   } else {
     alert("Solo puedes continuar si eres mayor de 18 años");
   }
